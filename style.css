@@ -137,18 +137,25 @@ section {
     flex-direction: column;
     gap: 8rem;
     text-align: center;
-    height: 15rem;
+    /* height: 15rem; */
     padding: 1rem;
 }
 .houseChoice{
     display: flex;
     flex-direction: column;
-    gap: 8rem;
+    gap: 9rem;
     text-align: center;
-    height: 15rem;
+    /* height: 15rem; */
+    margin-top: -11px;
     padding: 1rem;
     align-items: center;
 
+}
+.houseChoice .Paper, .houseChoice .Rock, .houseChoice .Scissors{
+  padding: 1rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
 }
 .unpicked{
     display: none;
@@ -159,7 +166,7 @@ section {
   margin-top: 10rem;
 }
 .userChoice .Rock{
-  margin-top: -3rem;
+  margin-top: -4rem;
 }
 .houseChoice .Rock{
   margin-top: -11.7rem;
