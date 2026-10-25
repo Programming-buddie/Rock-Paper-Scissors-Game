@@ -45,6 +45,7 @@ for (index = 0; index < 3; index++){
   }
   if (selectedRole.className == "Paper" && machineChoice.className == "Scissors") {
     console.log("Lose")
+    score.textContent = initalscore-1
   }
 
   // SCISSORS RULES
@@ -57,6 +58,7 @@ for (index = 0; index < 3; index++){
   }
   if (selectedRole.className == "Scissors" && machineChoice.className == "Rock") {
     console.log("Lose")
+    score.textContent = initalscore-1
   }
 
   // ROCK RULES
@@ -69,6 +71,7 @@ for (index = 0; index < 3; index++){
   }
   if (selectedRole.className == "Rock" && machineChoice.className == "Paper") {
     console.log("Lose")
+    score.textContent = initalscore-1
   }
   
   }

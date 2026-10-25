@@ -13,7 +13,7 @@
   /* Neutral */
 
   --Navy-900/*(dark text)*/: hsl(229, 25%, 31%);
-  --Blue-700/*(score text)*/: hsl(229, 64%, 46%);
+  --Blue-700/*(scoreboard text)*/: hsl(229, 64%, 46%);
   --Gray-600/*headeroutline*/: hsl(246, 11%, 37%);
 
   /* Background */
@@ -45,7 +45,7 @@ section {
   padding: 1rem;
 }
 
-.score {
+.scoreboard {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -55,11 +55,11 @@ section {
   padding: 1.5rem;
   border-radius: 10px;
 }
-.score p {
+.scoreboard p {
   font-weight: 600;
   margin: 0;
 }
-.score h1 {
+.scoreboard h1 {
   margin: 0;
   color: var(--Navy-900);
   font-size: 2rem;
