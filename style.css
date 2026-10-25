@@ -84,10 +84,18 @@ section {
 .Scissors,
 .Rock {
   background-color: white;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 100%;
   border-style: solid;
   border-width: 1rem;
+  width: 100px;
+  height: 100px;
+}
+.userRole img{
+  width: 50%;
+  height: 50%;
 }
 .Paper {
   border-color: var(--Blue-500);
@@ -111,4 +119,56 @@ section {
     color: white;
     border-color:aliceblue;
     align-self: flex-end;
+    
+}
+
+.picked{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 1rem auto;
+    margin-top: -1rem;
+    font-weight: 600;
+}
+.userChoice{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    text-align: center;
+    height: 15rem;
+    padding: 1rem;
+}
+.houseChoice{
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    text-align: center;
+    height: 15rem;
+    padding: 1rem;
+    align-items: center;
+
+}
+.unpicked{
+    display: none;
+}
+.userChoice .Paper,
+.userChoice .Scissors
+{
+  margin-top: 10rem;
+}
+.userChoice .Rock{
+  margin-top: -3rem;
+}
+.houseChoice .Rock{
+  margin-top: -11.7rem;
+}
+.skeleton{
+  background-color: #172240;
+  opacity: 40%;
+  border-radius: 100%;
+  margin-top: -6rem;
+  width: 100px;
+  height: 100px;
 }
