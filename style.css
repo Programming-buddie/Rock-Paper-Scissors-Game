@@ -140,6 +140,26 @@ section {
     height: 15rem;
     padding: 1rem;
 }
+.win-lose{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.win-lose h1{
+  color: white;
+  font-size: 30px;
+}
+.win-lose button{
+  /* padding: 1rem; */
+  height: 2.5rem;
+  width: 8rem;
+  color: var(--Red-600);
+  border-radius: 5px;
+  border: none;
+  margin-top: -0.5rem;
+}
 .houseChoice{
     display: flex;
     flex-direction: column;
