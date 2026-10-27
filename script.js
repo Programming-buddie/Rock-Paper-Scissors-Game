@@ -50,10 +50,10 @@ for (index = 0; index < 3; index++) {
     // Remove display of the skeleton
     houseChoice.children[1].style.display = "none";
 
-    houseChoice.replaceChild(machineChoice, houseChoice.children[1]);
+    houseChoice.replaceChild(machineChoice.cloneNode(true), houseChoice.children[1]);
 
     // Adding rules
-    localStorage.setItem("score", 12);
+    
     // PAPER RULES
     if (
       selectedRole.className == "Paper" &&
@@ -125,8 +125,8 @@ for (index = 0; index < 3; index++) {
   
 }
 playagainButton.addEventListener("click", ()=>{
-  let hcount = Number(localStorage.getItem("score"))
-  score.textContent = hcount;
-  window.location.assign("./index.html") 
+  roles.style.display = "flex";
+  choices.style.display = "none";
+  
 
 })
