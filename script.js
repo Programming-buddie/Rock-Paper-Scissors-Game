@@ -11,11 +11,21 @@ const playagainButton = document.querySelector("#playagain")
 // Keep the score value
 let count = Number(localStorage.getItem("score"));
 
+// TIE function
+function tie() {
+  if (choices.children[0].children[0].children[1]){
+    choices.children[0].children[0].children[1].remove()
+  }
+}
 // Win function
 function win() {
   count++;
   score.textContent = count;
   localStorage.setItem("score", count);
+  //choices.children[0].removeChild(choices.children[0].children[0].children[1])
+  if (choices.children[0].children[0].children[1]){
+    choices.children[0].children[0].children[1].remove()
+  }
 }
 
 // Lose function
@@ -23,6 +33,10 @@ function lose() {
   count--;
   score.textContent = count;
   localStorage.setItem("score", count);
+  
+  if (choices.children[0].children[0].children[1]){
+    choices.children[0].children[0].children[1].remove()
+  }
 }
 
 // Selecting each role
@@ -43,7 +57,7 @@ for (index = 0; index < 3; index++) {
     const randomNum = Math.floor(Math.random() * 3);
 
     const machineChoice = roles.children[randomNum];
-    console.log(roles.children[0], roles.children[1], roles.children[2]);
+    
 
     //  Putting the Random selection into place
 
@@ -60,6 +74,7 @@ for (index = 0; index < 3; index++) {
       machineChoice.className == "Paper"
     ) {
       winandloseDiv.children[0].innerHTML = "TIE";
+      tie()
     }
     if (
       selectedRole.className == "Paper" &&
@@ -82,6 +97,7 @@ for (index = 0; index < 3; index++) {
       machineChoice.className == "Scissors"
     ) {
       winandloseDiv.children[0].innerHTML = "TIE";
+      tie()
     }
     if (
       selectedRole.className == "Scissors" &&
@@ -101,6 +117,7 @@ for (index = 0; index < 3; index++) {
     // ROCK RULES
     if (selectedRole.className == "Rock" && machineChoice.className == "Rock") {
       winandloseDiv.children[0].innerHTML = "TIE";
+      tie()
     }
     if (
       selectedRole.className == "Rock" &&
@@ -108,6 +125,8 @@ for (index = 0; index < 3; index++) {
     ) {
       winandloseDiv.children[0].innerHTML = "YOU WIN";
       win();
+      
+      
     }
     if (
       selectedRole.className == "Rock" &&
@@ -115,18 +134,19 @@ for (index = 0; index < 3; index++) {
     ) {
       winandloseDiv.children[0].innerHTML = "YOU LOSE";
       lose();
+      
     }
-
-    console.log(localStorage.getItem("score"));
+    // Play Again function
+    function playAgain() {
+      roles.style.display = "flex";
+      choices.style.display = "none";
+      
+    }
+  playagainButton.addEventListener("click", playAgain)
+    
   }
-
+  
   // eventlistener for any role you pick
   selectedRole.addEventListener("click", pickedChoice);
   
 }
-playagainButton.addEventListener("click", ()=>{
-  roles.style.display = "flex";
-  choices.style.display = "none";
-  
-
-})
