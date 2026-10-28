@@ -14,7 +14,7 @@ let count = Number(localStorage.getItem("score"));
 // TIE function
 function tie() {
   if (choices.children[0].children[0].children[1]){
-    choices.children[0].children[0].children[1].remove()
+    choices.children[0].children[0].children[0].remove()
   }
 }
 // Win function
@@ -24,7 +24,7 @@ function win() {
   localStorage.setItem("score", count);
   //choices.children[0].removeChild(choices.children[0].children[0].children[1])
   if (choices.children[0].children[0].children[1]){
-    choices.children[0].children[0].children[1].remove()
+    choices.children[0].children[0].children[0].remove()
   }
 }
 
@@ -35,7 +35,7 @@ function lose() {
   localStorage.setItem("score", count);
   
   if (choices.children[0].children[0].children[1]){
-    choices.children[0].children[0].children[1].remove()
+    choices.children[0].children[0].children[0].remove()
   }
 }
 
