@@ -198,3 +198,30 @@ section {
   width: 100px;
   height: 100px;
 }
+@media (max-width: 500px) {
+  .topNav{
+    width: 20rem;
+    height: 4rem;
+  }
+  .topNav img{
+    width: 70%;
+  }
+  .scoreboard{
+    padding: 1.2rem;
+    width: 3.5rem;
+    height: 3rem;
+  }
+  .userRole{
+    width: 20rem
+  }
+  .Paper,
+  .Scissors,
+  .Rock{
+  width: 70px;
+  height: 70px;
+  }
+  .rules{
+    align-self: center;
+    margin-top: 4rem;
+  }
+}
