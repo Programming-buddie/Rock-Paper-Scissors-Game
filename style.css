@@ -224,4 +224,25 @@ section {
     align-self: center;
     margin-top: 8rem;
   }
+  .picked{
+    width: 25rem;
+    margin: 4rem auto;
+    margin-left: -2rem;
+    
+  }
+  .userChoice{
+    width: 10rem;
+    
+  }
+  .houseChoice{
+    
+    margin-left: -11rem;
+  }
+  .houseChoice .Paper, 
+  .houseChoice .Rock,
+  .houseChoice .Scissors{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
 }
