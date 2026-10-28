@@ -112,6 +112,7 @@ section {
 }
 
 .rules{
+    margin-left: 5rem;
     border-radius: 8px;
     border-style: solid;
     width: 7rem;
@@ -119,6 +120,7 @@ section {
     color: white;
     border-color:aliceblue;
     align-self: flex-end;
+    align-content: center;
     
 }
 
@@ -222,7 +224,9 @@ section {
   }
   .rules{
     align-self: center;
-    margin-top: 8rem;
+    margin-top: 5rem;
+    margin-left: 7rem;
+
   }
   .picked{
     width: 25rem;
@@ -230,6 +234,7 @@ section {
     margin-left: -2rem;
     
   }
+
   .userChoice{
     width: 10rem;
     
@@ -244,5 +249,12 @@ section {
     width: 2.5rem;
     height: 2.5rem;
   }
-  
+  .win-lose{
+    margin-top: 10rem ;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
