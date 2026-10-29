@@ -30,6 +30,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+.top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* section {
   display: flex;
   flex-direction: column;
@@ -79,7 +85,7 @@ body {
   /* background-color: aqua; */
   justify-content: center;
   align-items: center;
-  margin: 3rem;
+  /* margin: 3rem; */
   margin-top: 5rem;
   padding: 5rem;
 }
@@ -212,7 +218,7 @@ body {
   align-content: flex-end;
   flex-wrap: wrap;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .topNav{
     width: 20rem;
     height: 4rem;
