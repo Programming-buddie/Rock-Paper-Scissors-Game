@@ -47,6 +47,7 @@ for (index = 0; index < 3; index++) {
   function pickedChoice() {
     roles.style.display = "none";
     choices.style.display = "flex";
+    winandloseDiv.style.display = "flex"
 
     // Appears on the screen as what you picked
     const userPicked = choices.children[0].children[0].append(
@@ -140,6 +141,8 @@ for (index = 0; index < 3; index++) {
     function playAgain() {
       roles.style.display = "flex";
       choices.style.display = "none";
+      winandloseDiv.style.display = "none"
+
       
     }
   playagainButton.addEventListener("click", playAgain)
