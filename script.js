@@ -10,6 +10,8 @@ const playagainButton = document.querySelector("#playagain")
 
 // Keep the score value
 let count = Number(localStorage.getItem("score"));
+score.textContent = count
+ count = Math.max(0, count - 1)
 
 // TIE function
 function tie() {
@@ -138,17 +140,18 @@ for (index = 0; index < 3; index++) {
       
     }
     // Play Again function
-    function playAgain() {
+    
+ 
+    
+  }
+  function playAgain() {
       roles.style.display = "flex";
       choices.style.display = "none";
       winandloseDiv.style.display = "none"
 
       
     }
-  playagainButton.addEventListener("click", playAgain)
-    
-  }
-  
+   playagainButton.addEventListener("click", playAgain)
   // eventlistener for any role you pick
   selectedRole.addEventListener("click", pickedChoice);
   

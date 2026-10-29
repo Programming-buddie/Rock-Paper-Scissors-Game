@@ -254,7 +254,7 @@ footer{
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  
+  /* margin-top: 4rem; */
 }
   .picked{
     width: 20rem;
