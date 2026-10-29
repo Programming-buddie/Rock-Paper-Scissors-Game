@@ -255,7 +255,7 @@ body {
   .picked{
     width: 20rem;
     margin: 2rem;
-    display: flex;
+    display: none;
     margin: 2rem auto;
     /* margin: 4rem auto;
     margin-left: -2rem; */
