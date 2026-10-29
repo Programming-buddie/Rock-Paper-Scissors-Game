@@ -112,15 +112,15 @@ section {
 }
 
 .rules{
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
     border-radius: 8px;
     border-style: solid;
     width: 7rem;
     text-align: center;
     color: white;
     border-color:aliceblue;
-    align-self: flex-end;
-    align-content: center;
+    /* align-self: flex-end;
+    align-content: center; */
     
 }
 
@@ -200,6 +200,12 @@ section {
   width: 100px;
   height: 100px;
 }
+.rules-div{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
 @media (max-width: 500px) {
   .topNav{
     width: 20rem;
@@ -223,11 +229,17 @@ section {
   height: 70px;
   }
   .rules{
-    align-self: center;
+    /* align-self: center;
     margin-top: 5rem;
-    margin-left: 7rem;
+    margin-left: 7rem; */
 
   }
+  .rules-div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
   .picked{
     width: 25rem;
     margin: 4rem auto;
