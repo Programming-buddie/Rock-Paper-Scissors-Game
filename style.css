@@ -25,13 +25,17 @@
 
 body {
   background-color: hsl(214, 47%, 23%);
-}
-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
 .topNav {
   display: flex;
   border-radius: 8px;
@@ -127,12 +131,14 @@ section {
 .picked{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: fit-content;
-    margin: 1rem auto;
-    margin-top: -1rem;
+
+    /* margin: 1rem auto;
+    margin-top: -1rem; */
     font-weight: 600;
+    
 }
 .userChoice{
     display: flex;
@@ -241,19 +247,23 @@ section {
   flex-wrap: wrap;
 }
   .picked{
-    width: 25rem;
-    margin: 4rem auto;
-    margin-left: -2rem;
+    width: 20rem;
+    margin: 2rem;
+    display: flex;
+    margin: 2rem auto;
+    /* margin: 4rem auto;
+    margin-left: -2rem; */
     
   }
 
   .userChoice{
-    width: 10rem;
+    /* width: 10rem; */
+    gap: 300rem;
     
   }
   .houseChoice{
-    
-    margin-left: -11rem;
+    gap: 8.4rem;
+    /* margin-left: -11rem; */
   }
   .houseChoice .Paper, 
   .houseChoice .Rock,
