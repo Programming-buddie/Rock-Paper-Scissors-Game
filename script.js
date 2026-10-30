@@ -6,10 +6,32 @@ const score = document.querySelector("#score");
 const winandloseDiv = document.querySelector(".win-lose");
 const playagainButton = document.querySelector("#playagain")
 const rulesModal = document.querySelector(".rules")
-const modal = document.querySelector()
+const modal = document.querySelector(".modal")
+const closemodal = document.querySelector("#close-modal")
+const footer = document.querySelector("footer")
+const topLayout = document.querySelector(".top")
+
 
 rulesModal.addEventListener("click", ()=>{
-  console.log("Happy")
+  modal.style.display = "flex"
+  rulesModal.style.display = "none"
+  roles.style.display = "none";
+  choices.style.display = "none";
+  winandloseDiv.style.display = "none"
+  footer.style.display = "none"
+  topLayout.style.display = "none"
+  document.body.style.background = "white"
+})
+closemodal.addEventListener("click", ()=>{
+  modal.style.display = "none"
+  rulesModal.style.display = "flex"
+  roles.style.display = "flex";
+  choices.style.display = "none";
+  winandloseDiv.style.display = "none"
+  footer.style.display = "flex"
+  topLayout.style.display = "flex"
+  document.body.style.backgroundColor = "hsl(214, 47%, 23%)"
+  
 })
 
 // Keep the score value

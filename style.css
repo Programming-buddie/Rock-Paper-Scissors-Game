@@ -223,8 +223,11 @@ footer{
   margin-top: 2rem;
 }
 @media (max-width: 600px) {
+  footer{
+    margin-top: 10rem;
+  }
   .topNav{
-    width: 20rem;
+    width: min(18rem, 20rem);
     height: 4rem;
   }
   .topNav img{
@@ -236,18 +239,21 @@ footer{
     height: 3rem;
   }
   .userRole{
+    margin-top: 8rem;
     width: 20rem
   }
   .Paper,
   .Scissors,
   .Rock{
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   }
   .rules{
     margin-top: 1rem;
     width: 10rem;
-
+    
+    display: flex;
+    justify-content: center;
   }
   .rules-div{
   display: flex;
@@ -269,11 +275,13 @@ footer{
   .userChoice{
     /* width: 10rem; */
     gap: 300rem;
+    /* flex-direction: column-reverse; */
     
   }
   .houseChoice{
     gap: 8.4rem;
     /* margin-left: -11rem; */
+    /* flex-direction: column-reverse; */
   }
   .houseChoice .Paper, 
   .houseChoice .Rock,
@@ -306,5 +314,24 @@ footer{
     color: var(--Navy-900);
     font-weight: 700;
     margin-top: -1.5rem;
+  }
+  .modal{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.7rem;
+    margin: 0;
+    ;
+    
+  }
+  .modal h1{
+    margin-top: 4rem;
+    color: var(--Navy-900);
+  }
+  .modal #close-modal{
+     margin-top: 3.5rem; 
+    
+    /* margin-bottom: -10rem; */
   }
 }
