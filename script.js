@@ -5,8 +5,12 @@ const houseChoice = document.querySelector(".houseChoice");
 const score = document.querySelector("#score");
 const winandloseDiv = document.querySelector(".win-lose");
 const playagainButton = document.querySelector("#playagain")
+const rulesModal = document.querySelector(".rules")
+const modal = document.querySelector()
 
-
+rulesModal.addEventListener("click", ()=>{
+  console.log("Happy")
+})
 
 // Keep the score value
 let count = Number(localStorage.getItem("score"));
