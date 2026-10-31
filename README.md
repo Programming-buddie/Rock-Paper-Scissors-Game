@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://programming-buddie.github.io/Rock-Paper-Scissors-Game/)
+- Live Site URL: [Live URL](https://programming-buddie.github.io/Rock-Paper-Scissors-Game/)
 
 ## My process
 
