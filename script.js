@@ -20,7 +20,19 @@ rulesModal.addEventListener("click", ()=>{
   winandloseDiv.style.display = "none"
   footer.style.display = "none"
   topLayout.style.display = "none"
-  document.body.style.background = "white"
+  if (window.innerWidth <= 600) {
+    document.body.style.background = "white"
+  }
+  if (window.innerWidth > 600){
+    modal.style.display = "flex"
+    rulesModal.style.display = "none"
+    roles.style.display = "flex";
+    choices.style.display = "none";
+    winandloseDiv.style.display = "none"
+    footer.style.display = "flex"
+    topLayout.style.display = "flex"
+    topLayout.style.opacity = "30%"
+  }
 })
 closemodal.addEventListener("click", ()=>{
   modal.style.display = "none"
@@ -31,6 +43,7 @@ closemodal.addEventListener("click", ()=>{
   footer.style.display = "flex"
   topLayout.style.display = "flex"
   document.body.style.backgroundColor = "hsl(214, 47%, 23%)"
+  topLayout.style.opacity = "100%"
   
 })
 
