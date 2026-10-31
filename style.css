@@ -79,9 +79,12 @@ body {
 
 .userRole {
   background-image: url(./images/bg-triangle.svg);
-  background-size: contain;
+  background-size: 300px;
   background-repeat: no-repeat;
-  display: flex;
+  display: grid;
+  
+  grid-template-columns:repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
   background-position: center;
   /* background-color: aqua; */
   justify-content: center;
@@ -89,6 +92,7 @@ body {
   /* margin: 3rem; */
   margin-top: 5rem;
   padding: 5rem;
+  height: 20rem;
 }
 
 .Paper,
@@ -101,8 +105,8 @@ body {
   border-radius: 100%;
   border-style: solid;
   border-width: 1rem;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 .userRole img{
   width: 50%;
@@ -110,16 +114,23 @@ body {
 }
 .Paper {
   border-color: var(--Blue-500);
-  transform: translateY(-120px);
+  
+  /* transform: translateY(-120px); */
 }
 .Rock {
   border-color: var(--Red-600);
-  transform: translateY(80px);
+  /* transform: translateY(80px); */
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 .Scissors {
   border-color: var(--Gold-500);
-  transform: translateY(-120px);
+  /* transform: translateY(-120px); */
   /* transform: translateX(-150px); */
+  grid-column-start: 3;
+  grid-column-end: 3;
 }
 
 .rules{
@@ -213,14 +224,23 @@ body {
   width: 100px;
   height: 100px;
 }
+/* .playAgain{
+  display: none;
+} */
 .rules-div{
   display: flex;
   justify-content: center;
-  align-content: flex-end;
+  align-items: flex-end;
   flex-wrap: wrap;
+}
+.rules{
+  align-content: flex-end;
 }
 footer{
   margin-top: 2rem;
+}
+.modal{
+  display: none;
 }
 @media (max-width: 600px) {
   footer{
@@ -260,7 +280,7 @@ footer{
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  /* margin-top: 4rem; */
+  margin-top: 4rem;
 }
   .picked{
     width: 20rem;
@@ -326,7 +346,7 @@ footer{
     
   }
   .modal h1{
-    margin-top: 4rem;
+    margin-top: 0rem;
     color: var(--Navy-900);
   }
   .modal #close-modal{
