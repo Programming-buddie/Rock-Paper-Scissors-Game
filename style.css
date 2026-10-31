@@ -79,12 +79,9 @@ body {
 
 .userRole {
   background-image: url(./images/bg-triangle.svg);
-  background-size: 300px;
+  background-size: ();
   background-repeat: no-repeat;
-  display: grid;
-  
-  grid-template-columns:repeat(3, auto);
-  grid-template-rows: repeat(2, auto);
+  display: flex;
   background-position: center;
   /* background-color: aqua; */
   justify-content: center;
@@ -92,7 +89,6 @@ body {
   /* margin: 3rem; */
   margin-top: 5rem;
   padding: 5rem;
-  height: 20rem;
 }
 
 .Paper,
@@ -105,8 +101,8 @@ body {
   border-radius: 100%;
   border-style: solid;
   border-width: 1rem;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 .userRole img{
   width: 50%;
@@ -114,23 +110,16 @@ body {
 }
 .Paper {
   border-color: var(--Blue-500);
-  
-  /* transform: translateY(-120px); */
+  transform: translateY(-120px);
 }
 .Rock {
   border-color: var(--Red-600);
-  /* transform: translateY(80px); */
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  transform: translateY(80px);
 }
 .Scissors {
   border-color: var(--Gold-500);
-  /* transform: translateY(-120px); */
+  transform: translateY(-120px);
   /* transform: translateX(-150px); */
-  grid-column-start: 3;
-  grid-column-end: 3;
 }
 
 .rules{
@@ -141,6 +130,7 @@ body {
     text-align: center;
     color: white;
     border-color:aliceblue;
+    margin-top: 4rem;
     /* align-self: flex-end;
     align-content: center; */
     
@@ -172,6 +162,8 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 99;
+  margin-top: -12rem;
+  position: relative;
 }
 .win-lose h1{
   color: white;
@@ -259,7 +251,7 @@ footer{
     height: 3rem;
   }
   .userRole{
-    margin-top: 8rem;
+    margin-top: 5rem;
     width: 20rem
   }
   .Paper,
@@ -280,7 +272,7 @@ footer{
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
   .picked{
     width: 20rem;
@@ -316,7 +308,7 @@ footer{
     align-content: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     display: none;
   }
   .win-lose h1{
@@ -342,8 +334,11 @@ footer{
     align-items: center;
     gap: 5.7rem;
     margin: 0;
-    ;
     
+    
+  }
+  footer{
+    margin-top: 2rem;
   }
   .modal h1{
     margin-top: 0rem;
