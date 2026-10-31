@@ -54,6 +54,9 @@ function win() {
   if (choices.children[0].children[0].children[1]){
     choices.children[0].children[0].children[0].remove()
   }
+  if (window.innerWidth > 600){
+    playagainButton.style.color = "hsl(229, 25%, 31%)"
+  }
 }
 
 // Lose function
